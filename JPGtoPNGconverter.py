@@ -11,6 +11,8 @@ print(image_folder, output_folder)
 # we get back: Pokedex/ new/
 
 #check if new folder exist if not, create it
+if not os.path.exists(output_folder):
+  os.makedirs(output_folder)
 
 #loop trough Pokedex and convert imagaes to PNG
 
