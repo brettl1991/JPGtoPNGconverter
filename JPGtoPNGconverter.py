@@ -17,6 +17,7 @@ if not os.path.exists(output_folder):
 #loop trough Pokedex and convert imagaes to PNG
 for filname in os.listdir(image_folder):
   img = Image.open(f'{image_folder}{filname}')
-
+  clean_name = os.path.splitext(filname)
+  print(clean_name)
 
 #save them to the new folder
